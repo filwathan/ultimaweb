@@ -1,7 +1,7 @@
 import React, {useRef} from 'react'
 import Menu from '../components/Menu'
 
-const Home = () => {
+const Home = () => { 
   const ref = useRef(null);
   return (
     <div className='h-full' ref={ref}>

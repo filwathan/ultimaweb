@@ -6,6 +6,8 @@ module.exports = {
       extend: {
         backgroundImage: {
           'cap1' : "url('/src/asset/images/cap1.png')",
+          'paper' : "url('/src/asset/images/paper.png')",
+          'bg3' : "url('/src/asset/images/bg3.png')",
         }
       },
     },

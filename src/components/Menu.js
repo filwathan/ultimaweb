@@ -24,6 +24,7 @@ const Menu = () => {
             <li><Link to='/SertifikasiISO' className='hover:bg-red-200'>ISO 45001</Link></li>
             <li><Link to='/SertifikasiISO' className='hover:bg-red-200'>ISO 50001</Link></li>
             <li><Link to='/SertifikasiISO' className='hover:bg-red-200'>ISO 55000</Link></li>
+            <li><Link to='/SertifikasiISO' className='hover:bg-red-200'>SMK-3</Link></li>
           </ul>
         </div>
         <div className="dropdown dropdown-hover">

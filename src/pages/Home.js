@@ -1,43 +1,42 @@
-import React, {useRef} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
-import Menu from '../components/Menu'
+import Navbar from '../components/Navbar'
 import * as Icon from 'react-feather'
 
 const Home = () => {
-  const ref = useRef(null);
+  
   return (
-    <div className='h-full' ref={ref}>
-        <div><Menu /></div>
+    <div className='h-full'>
+        <div><Navbar /></div>
         {/* introduction */}
-        <div className="h-screen flex bg-paper bg-cover bg-center">
-          <div className='flex-1 pl-10 pt-[200px] pr-20'>
-            <div className='text-5xl font-black text-white'>
+        <div className="h-screen max-[900px]:h-full flex bg-paper bg-cover bg-center">
+          <div className='flex-1 pl-10 py-[150px] pr-10 max-[768px]:pr-36'>
+            <div className='text-5xl font-black text-white min-[1366px]:text-[60px] min-[1536px]:text-[70px]'>
               QUALITY IS OUR PRIORITY              
             </div>
-            <div className='font-semibold mt-4 italic underline text-l text-white'>
+            <div className='font-semibold mt-4 italic underline text-l text-white min-[1366px]:text-[20px] min-[1536px]:text-[25px]'>
               Our Mission
             </div>
-            <div className='font-semibold text-l pr-28 text-white'>
+            <div className='font-semibold text-l pr-28 text-white min-[1366px]:text-[20px] min-[1536px]:text-[25px]'>
               Memberikan pelayanan prima dengan mengutamakan
               kualitas, profesionalisme, kehandalan,tanggung
               jawab serta tepat waktu dalam dengan bertujuan
               mencapai kepuasan pelangan
             </div>
-            <div className='font-semibold mt-4 italic underline text-l text-white'>
+            <div className='font-semibold mt-4 italic underline text-l text-white min-[1366px]:text-[20px] min-[1536px]:text-[25px]'>
               Our Vision
             </div>
-            <div className='font-semibold text-l pr-28 text-white'>
+            <div className='font-semibold text-l pr-28 text-white min-[1366px]:text-[20px] min-[1536px]:text-[25px]'>
               Menjadi perusahaan konsultan manajemen ISO
               Series yang mengedepankan kualitas SDM dan
               pelayananan terbaik.
             </div>
           </div>
-          <div className=' flex-1 flex justify-center items-center text-black
-          '></div>
+          <div className=' flex-1 flex justify-center items-center text-black max-[768px]:hidden'></div>
         </div>
         {/* WHY OUS ? */}
-        <div className='h-screen flex items-center flex-col'>
-          <div className='text-5xl pt-10 text-[#e72327] font-bold'>MENGAPA ULTIMA KONSULTAN ?</div>
+        <div className='h-screen max-[900px]:h-full flex items-center flex-col'>
+          <div className='text-5xl pt-10 text-[#e72327] font-bold min-[1366px]:text-[80px]'>MENGAPA ULTIMA KONSULTAN ?</div>
           <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10'>
             <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
@@ -114,7 +113,7 @@ const Home = () => {
           </div>
         </div>
         {/* our services */}
-        <div className='h-screen bg-[#F0F0F0] flex items-center p-10 gap-4'>
+        <div className='h-screen max-[900px]:h-full bg-[#F0F0F0] flex items-center p-10 gap-4'>
           <div className='bg-white h-full w-full flex justify-center items-center rounded-2xl'>
             <img className='w-[100%] h-[70%]' src={require('../asset/images/logo2.png')} alt='logo' />
           </div>
@@ -150,7 +149,7 @@ const Home = () => {
           </div>
         </div>
         {/* our products */}
-        <div className='h-screen bg-bg3 bg-fixed'>
+        <div className='h-screen max-[900px]:h-full bg-bg3 bg-fixed'>
           <div className='h-full w-full bg-red-500/60 flex flex-col p-10 gap-10'>
             <div className='flex justify-center'>
               <h2 className='text-5xl pt-10 text-white font-bold'>PRODUK KAMI</h2>
@@ -180,7 +179,7 @@ const Home = () => {
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Pocket/>SMK-3 (PP.50/2012)</Link>
                   </div>
                 </div>
-                <div className='flex justify-end'><Link to='/SertifikasiISO' className='text-sm hover:text-[#e72327]'>produk lainnya ...</Link></div>
+                {/* <div className='flex justify-end'><Link to='/SertifikasiISO' className='text-sm hover:text-[#e72327]'>produk lainnya ...</Link></div> */}
               </div>
               <div className='h-full w-full bg-white rounded-2xl px-10 py-7 flex flex-col gap-4'>
               <div>
@@ -190,7 +189,7 @@ const Home = () => {
                   <div className='flex flex-col gap-2 grow'>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO Introduction</Link>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO Awareness</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>Audit internal</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>Audit internal ISO 19011:2018</Link>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Clipboard/>Upgrade Dokumen</Link>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Thermometer/>Document Control</Link>
                   </div>
@@ -200,7 +199,7 @@ const Home = () => {
           </div>
         </div>
         {/* Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3 */}
-        <div className='h-screen bg-[#e72327] flex items-center flex-col'>
+        <div className='h-screen max-[900px]:h-full bg-[#e72327] flex items-center flex-col'>
           <div className='text-5xl pt-10 text-white font-bold'>Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3</div>
           <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10'>
             <div className="card flex items-center justify-center w-[20%] bg-white shadow-sm hover:shadow-white group/tahapan">

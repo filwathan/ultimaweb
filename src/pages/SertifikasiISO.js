@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const SertifikasiISO = () => {
   return (
-    <div>SertifikasiISO</div>
+    <div>
+      <Navbar></Navbar>
+      <div>SertifikasiISO</div>
+    </div>
   )
 }
 

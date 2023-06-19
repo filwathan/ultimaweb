@@ -36,7 +36,7 @@ const Home = () => {
         </div>
         {/* WHY OUS ? */}
         <div className='h-screen max-[900px]:h-full flex items-center flex-col'>
-          <div className='text-5xl pt-10 text-[#e72327] font-bold min-[1366px]:text-[80px]'>MENGAPA ULTIMA KONSULTAN ?</div>
+          <div className='text-5xl pt-10 text-[#e72327] text-center font-bold min-[1366px]:text-[80px]'>MENGAPA ULTIMA KONSULTAN ?</div>
           <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10 max-[900px]:flex-col'>
             <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>

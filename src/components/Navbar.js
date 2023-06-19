@@ -58,11 +58,11 @@ const Navbar = () => {
       <div className='min-[900px]:hidden'>
         <button  className='h-full w-full'><Menu onClick={() =>{setToggle(!toggle)}} /></button>
         {toggle &&
-          <div className='absolute right-4 mt-4 flex flex-col gap-1 px-2 py-4 bg-[#F5F5F5] rounded-xl'>
-            <Link  to='/SertifikasiISO' className='text-black text-end' >Sertifikasi ISO </Link>
-            <Link  to='/SertifikasiISO' className='text-black text-end' >Sistem Manajemen </Link>
-            <Link  to='/SertifikasiISO' className='text-black text-end' >Klien </Link>
-            <Link  to='/SertifikasiISO' className='text-black text-end' >Galeri </Link>
+          <div className='absolute right-4 mt-4 flex flex-col gap-1 px-2 py-4 bg-black rounded-xl'>
+            <Link  to='/SertifikasiISO' className='text-white text-end' >Sertifikasi ISO </Link>
+            <Link  to='/SertifikasiISO' className='text-white text-end' >Sistem Manajemen </Link>
+            <Link  to='/SertifikasiISO' className='text-white text-end' >Klien </Link>
+            <Link  to='/SertifikasiISO' className='text-white text-end' >Galeri </Link>
           </div>
         }
       </div>

@@ -37,8 +37,8 @@ const Home = () => {
         {/* WHY OUS ? */}
         <div className='h-screen max-[900px]:h-full flex items-center flex-col'>
           <div className='text-5xl pt-10 text-[#e72327] font-bold min-[1366px]:text-[80px]'>MENGAPA ULTIMA KONSULTAN ?</div>
-          <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10'>
-            <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
+          <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10 max-[900px]:flex-col'>
+            <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-full h-20">
@@ -53,7 +53,7 @@ const Home = () => {
                 jasa, ataupun pelaksanaan di lapangan</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
+            <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-full h-20">
@@ -68,7 +68,7 @@ const Home = () => {
                 terjamin kualitas dan kepuasannya</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
+            <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-full h-20">
@@ -83,7 +83,7 @@ const Home = () => {
                 bersifat independen dan objective</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
+            <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-full h-20">
@@ -96,7 +96,7 @@ const Home = () => {
                 <p className='text-center text-white'>Jenis format dokumen yang bervariasi sesuai dengan kebutuhan dan ketersediaan data</p>
               </div>
             </div>            
-            <div className="card w-[20%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
+            <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20'>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="stroke-white w-full h-20">
@@ -114,7 +114,7 @@ const Home = () => {
         </div>
         {/* our services */}
         <div className='h-screen max-[900px]:h-full bg-[#F0F0F0] flex items-center p-10 gap-4'>
-          <div className='bg-white h-full w-full flex justify-center items-center rounded-2xl'>
+          <div className='bg-white h-full w-full flex justify-center items-center rounded-2xl max-[900px]:hidden'>
             <img className='w-[100%] h-[70%]' src={require('../asset/images/logo2.png')} alt='logo' />
           </div>
           <div className='w-full h-full bg-[#F0F0F0] flex flex-col justify-end gap-5 pt-5'>
@@ -154,12 +154,12 @@ const Home = () => {
             <div className='flex justify-center'>
               <h2 className='text-5xl pt-10 text-white font-bold'>PRODUK KAMI</h2>
             </div>
-            <div className='flex gap-20 w-full h-full'>
+            <div className='flex gap-20 w-full h-full max-[900px]:flex-col'>
               <div className='h-full w-full bg-white rounded-2xl px-10 py-7 flex flex-col gap-4'>
                 <div>
                   <h2 className='text-[#e72327] text-xl font-bold text-center'>KONSULTASI DAN SERTIFIKASI</h2>
                 </div>
-                <div className='flex '>
+                <div className='flex max-[400px]:flex-col max-[400px]:gap-3'>
                   <div className='flex flex-col gap-2 grow'>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO 9001:2015</Link>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO 13485</Link>
@@ -200,48 +200,48 @@ const Home = () => {
         </div>
         {/* Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3 */}
         <div className='h-screen max-[900px]:h-full bg-[#e72327] flex items-center flex-col'>
-          <div className='text-5xl pt-10 text-white font-bold'>Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3</div>
-          <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10'>
-            <div className="card flex items-center justify-center w-[20%] bg-white shadow-sm hover:shadow-white group/tahapan">
+          <div className='text-5xl text-center pt-10 text-white font-bold'>Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3</div>
+          <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10 max-[900px]:flex-col'>
+            <div className="card w-[20%] max-[900px]:w-full bg-white shadow-sm hover:shadow-white group/tahapan">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20 group-hover/tahapan:hidden'>
                   <Icon.Box className='w-full h-20 stroke-[#e72327]' />
                 </div>
               </div>
-              <div className="card-body ">
+              <div className="card-body flex items-center">
                 <h2 className="card-title text-[#e72327] font-bold text-2xl text-center group-hover/tahapan:hidden">Gap Assessing</h2>
                 <p className='text-center text-[#e72327] hidden group-hover/tahapan:block'>Mengetahui celah kesesuaian antara pelaksanaan saat ini terhadap standard ISO yang berlaku</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-white shadow-sm hover:shadow-white group/tahapan">
+            <div className="card w-[20%] max-[900px]:w-full bg-white shadow-sm hover:shadow-white group/tahapan">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20 group-hover/tahapan:hidden'>
                 <Icon.PenTool className='w-full h-20 stroke-[#e72327]' />
                 </div>
               </div>
-              <div className="card-body ">
+              <div className="card-body flex items-center">
                 <h2 className="card-title text-[#e72327] font-bold text-2xl text-center group-hover/tahapan:hidden">Training (Awareness & Internal Auditing)</h2>
                 <p className='text-center text-[#e72327] hidden group-hover/tahapan:block'>Memberikan pemahaman kepada team dalam rangka pelaksanaan kegiataan system manajemen mutu tersebut berjalan, terkait dengan risk Management, Quality Plan, Objective target, moitoriing and controling, conytency of implementation</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-white shadow-sm hover:shadow-white group/tahapan">
+            <div className="card w-[20%] max-[900px]:w-full bg-white shadow-sm hover:shadow-white group/tahapan">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20 group-hover/tahapan:hidden'>
                 <Icon.Tool className='w-full h-20 stroke-[#e72327]' />
                 </div>
               </div>
-              <div className="card-body ">
+              <div className="card-body flex items-center">
                 <h2 className="card-title text-[#e72327] font-bold text-2xl text-center group-hover/tahapan:hidden">Implementation guidance and monitoring</h2>
                 <p className='text-center text-[#e72327] hidden group-hover/tahapan:block'>Konsisteni pelaksanaan dan penerapan merupakan kunci pokok dari sebuah sistem manajemen, kami hadir dalam rangka membantu kontroling, monitoring dan memberikan masukan yang bersifat saran untuk mencapai sebuah system manajemnen mutu yang ideal</p>
               </div>
             </div>
-            <div className="card w-[20%] bg-white shadow-sm hover:shadow-white group/tahapan ">
+            <div className="card w-[20%] max-[900px]:w-full bg-white shadow-sm hover:shadow-white group/tahapan ">
               <div className='w-full h-24 flex justify-center items-end'>
                 <div className='w-20 h-20 group-hover/tahapan:hidden'>
                   <Icon.Award className='w-full h-20 stroke-[#e72327]' />
                 </div>
               </div>
-              <div className="card-body ">
+              <div className="card-body flex items-center">
                 <h2 className="card-title text-[#e72327] font-bold text-2xl text-center group-hover/tahapan:hidden">Pendampingan audit pihak ketiga dengan garansi kelulusan</h2>
                 <p className='text-center text-[#e72327] hidden group-hover/tahapan:block '>Audit pihak ketiga yang independen menjadi momok besar dalam proses sertifikasi kami hadir mendampingi anda sampai selesainya proses audit dengan garansi kelulusan 100% apabila menggunakan CB yang telah bekerjasama dengan kami</p>
               </div>
@@ -250,7 +250,7 @@ const Home = () => {
         </div>
         {/* progress time table */}
         <div className='h-screen bg-[#e72327] flex items-center flex-col'>
-          <div className='text-5xl pt-10 text-white font-bold'>Progress Time Table</div>          
+          <div className='text-5xl pt-10 text-white text-center font-bold'>Progress Time Table</div>          
           <div className='w-full h-full flex justify-center items-center px-10 flex-1'>
             <div className='flex justify-center items-center group/timeline'>
               <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>

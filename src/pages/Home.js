@@ -9,8 +9,8 @@ const Home = () => {
     <div className='h-full'>
         <div><Navbar /></div>
         {/* introduction */}
-        <div className="h-screen max-[900px]:h-full flex bg-paper bg-cover bg-center">
-          <div className='flex-1 pl-10 py-[150px] pr-10 max-[768px]:pr-36'>
+        <div className="h-screen max-[900px]:h-full flex bg-paper bg-cover bg-center ">
+          <div className='flex-[0.8] pl-10 py-[150px] pr-10'>
             <div className='text-5xl font-black text-white min-[1366px]:text-[60px] min-[1536px]:text-[70px]'>
               QUALITY IS OUR PRIORITY              
             </div>

@@ -253,38 +253,38 @@ const Home = () => {
           <div className='text-5xl pt-10 text-white text-center font-bold'>Progress Time Table</div>          
           <div className='w-full h-full flex justify-center items-center px-10 flex-1'>
             <div className='flex justify-center items-center group/timeline'>
-              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>
+              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden max-[900px]:w-14 max-[900px]:h-14'>
                 <Icon.Settings />
               </div>
-              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block'>Diagnosa Asessment</div>
+              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block max-[900px]:text-lg'>Diagnosa Asessment</div>
             </div>
             <div className='border-4 border-white w-full flex-1'></div>
             <div className='flex justify-center items-center group/timeline'>
-              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>
+              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden max-[900px]:w-14 max-[900px]:h-14'>
                 <Icon.Briefcase />
               </div>
-              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block'>Training</div>
+              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block max-[900px]:text-lg'>Training</div>
             </div>
             <div className='border-4 border-white w-full flex-1'></div>
             <div className='flex justify-center items-center group/timeline'>
-              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>
+              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden max-[900px]:w-14 max-[900px]:h-14'>
                 <Icon.BookOpen />
               </div>
-              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block'>Created Document</div>
+              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block max-[900px]:text-lg'>Created Document</div>
             </div>
             <div className='border-4 border-white w-full flex-1'></div>
             <div className='flex justify-center items-center group/timeline'>
-              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>
+              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden max-[900px]:w-14 max-[900px]:h-14'>
                 <Icon.Airplay />
               </div>
-              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block'>Implementation</div>
+              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block max-[900px]:text-lg'>Implementation</div>
             </div>
             <div className='border-4 border-white w-full flex-1'></div>
             <div className='flex justify-center items-center group/timeline'>
-              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden'>
+              <div className='bg-white rounded-full w-20 h-20 flex justify-center items-center group-hover/timeline:hidden max-[900px]:w-14 max-[900px]:h-14'>
                 <Icon.Target />
               </div>
-              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block'>Cerificate</div>
+              <div className='text-3xl text-[#e72327] font-bold text-center bg-white rounded-3xl px-4 py-2 hidden group-hover/timeline:block max-[900px]:text-lg'>Cerificate</div>
             </div>
           </div>
         </div>

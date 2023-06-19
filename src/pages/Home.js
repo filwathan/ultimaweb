@@ -159,7 +159,7 @@ const Home = () => {
                 <div>
                   <h2 className='text-[#e72327] text-xl font-bold text-center'>KONSULTASI DAN SERTIFIKASI</h2>
                 </div>
-                <div className='flex max-[400px]:flex-col max-[400px]:gap-3'>
+                <div className='flex max-[535px]:flex-col max-[535px]:gap-3'>
                   <div className='flex flex-col gap-2 grow'>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO 9001:2015</Link>
                     <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO 13485</Link>

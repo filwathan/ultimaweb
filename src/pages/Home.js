@@ -152,7 +152,7 @@ const Home = () => {
         <div className='h-screen max-[900px]:h-full bg-bg3 bg-fixed'>
           <div className='h-full w-full bg-red-500/60 flex flex-col p-10 gap-10'>
             <div className='flex justify-center'>
-              <h2 className='text-5xl pt-10 text-white font-bold'>PRODUK KAMI</h2>
+              <h2 className='text-5xl pt-10 text-white text-center font-bold'>PRODUK KAMI</h2>
             </div>
             <div className='flex gap-20 w-full h-full max-[900px]:flex-col'>
               <div className='h-full w-full bg-white rounded-2xl px-10 py-7 flex flex-col gap-4'>

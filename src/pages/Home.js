@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
+import Whatsapp from '../components/Whatsapp'
 import * as Icon from 'react-feather'
 
 const Home = () => {
@@ -8,8 +10,9 @@ const Home = () => {
   return (
     <div className='h-full'>
         <div><Navbar /></div>
+        <Whatsapp/>
         {/* introduction */}
-        <div className="h-screen max-[900px]:h-full flex bg-paper bg-cover bg-center ">
+        <div className="h-screen max-[1024px]:h-full flex bg-paper bg-cover bg-center ">
           <div className='flex-[0.8] pl-10 py-[150px] pr-10 max-[335px]:pr-0'>
             <div className='text-5xl font-black text-white min-[1366px]:text-[60px] min-[1536px]:text-[70px]'>
               QUALITY IS OUR PRIORITY              
@@ -35,7 +38,7 @@ const Home = () => {
           <div className=' flex-1 flex justify-center items-center text-black max-[768px]:hidden'></div>
         </div>
         {/* WHY OUS ? */}
-        <div className='h-screen max-[900px]:h-full flex items-center flex-col'>
+        <div className='h-screen max-[1024px]:h-full flex items-center flex-col'>
           <div className='text-5xl pt-10 text-[#e72327] text-center font-bold min-[1366px]:text-[80px]'>MENGAPA ULTIMA KONSULTAN ?</div>
           <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10 max-[900px]:flex-col'>
             <div className="card w-[20%] max-[900px]:w-[100%] bg-[#e72327] shadow-lg hover:shadow-[#e72327]">
@@ -113,7 +116,7 @@ const Home = () => {
           </div>
         </div>
         {/* our services */}
-        <div className='h-screen max-[900px]:h-full bg-[#F0F0F0] flex items-center p-10 gap-4'>
+        <div className='h-screen max-[1024px]:h-full bg-[#F0F0F0] flex items-center p-10 gap-4'>
           <div className='bg-white h-full w-full flex justify-center items-center rounded-2xl max-[900px]:hidden'>
             <img className='w-[100%] h-[70%]' src={require('../asset/images/logo2.png')} alt='logo' />
           </div>
@@ -149,7 +152,7 @@ const Home = () => {
           </div>
         </div>
         {/* our products */}
-        <div className='h-screen max-[900px]:h-full bg-bg3 bg-fixed'>
+        <div className='h-screen max-[1024px]:h-full bg-bg3 bg-fixed'>
           <div className='h-full w-full bg-red-500/60 flex flex-col p-10 gap-10'>
             <div className='flex justify-center'>
               <h2 className='text-5xl pt-10 text-white text-center font-bold'>PRODUK KAMI</h2>
@@ -157,41 +160,35 @@ const Home = () => {
             <div className='flex gap-20 w-full h-full max-[900px]:flex-col'>
               <div className='h-full w-full bg-white rounded-2xl px-10 py-7 flex flex-col gap-4'>
                 <div>
-                  <h2 className='text-[#e72327] text-xl font-bold text-center'>KONSULTASI DAN SERTIFIKASI</h2>
+                  <h2 className='text-[#e72327] text-3xl font-bold text-center'>KONSULTASI DAN SERTIFIKASI</h2>
                 </div>
                 <div className='flex max-[535px]:flex-col max-[535px]:gap-3'>
                   <div className='flex flex-col gap-2 grow'>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO 9001:2015</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO 13485</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>ISO 14001:2015</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Clipboard/>ISO 17020</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Thermometer/>ISO 17025</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Shield/>OHSAS 18001:2007</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cast/>ISO 20000-1</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO 9001:2015</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>ISO 14001:2015</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Coffee/>ISO 22000</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Pocket/>ISO 22301</Link>
                   </div>
                   <div className='flex flex-col gap-2 grow'>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Coffee/>ISO 22000</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Key/>ISO 27001</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.DollarSign/>ISO 37001:2016</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.PlusSquare/>ISO 45001:2018</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Droplet/>ISO 50001:2015</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Grid/>ISO 55000:2015</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Pocket/>SMK-3 (PP.50/2012)</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Key/>ISO 27001</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.DollarSign/>ISO 37001:2016</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.PlusSquare/>ISO 45001:2018</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Shield/>SMK-3 (PP.50/2012)</Link>
                   </div>
                 </div>
                 {/* <div className='flex justify-end'><Link to='/SertifikasiISO' className='text-sm hover:text-[#e72327]'>produk lainnya ...</Link></div> */}
               </div>
               <div className='h-full w-full bg-white rounded-2xl px-10 py-7 flex flex-col gap-4'>
               <div>
-                  <h2 className='text-[#e72327] text-xl font-bold text-center'>PENINGKATAN KOMPETENSI</h2>
+                  <h2 className='text-[#e72327] text-3xl font-bold text-center'>PENINGKATAN KOMPETENSI</h2>
                 </div>
                 <div className='flex '>
                   <div className='flex flex-col gap-2 grow'>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO Introduction</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO Awareness</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>Audit internal ISO 19011:2018</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Clipboard/>Upgrade Dokumen</Link>
-                    <Link to='/SertifikasiISO' className='flex gap-2 px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Thermometer/>Document Control</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Sliders/>ISO Introduction</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Plus/>ISO Awareness</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Cloud/>Audit internal ISO 19011:2018</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Clipboard/>Upgrade Dokumen</Link>
+                    <Link to='/SertifikasiISO' className='flex gap-2 text-xl px-2 hover:text-white hover:bg-[#e72327] rounded-lg transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-100 duration-300'><Icon.Thermometer/>Document Control</Link>
                   </div>
                 </div>
               </div>
@@ -199,7 +196,7 @@ const Home = () => {
           </div>
         </div>
         {/* Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3 */}
-        <div className='h-screen max-[900px]:h-full bg-[#e72327] flex items-center flex-col'>
+        <div className='h-screen max-[1024px]:h-full bg-[#e72327] flex items-center flex-col'>
           <div className='text-5xl text-center pt-10 text-white font-bold'>Tahapan Pelaksanaan Sertifikasi ISO Dan SMK3</div>
           <div className='w-full h-10 flex-1 flex gap-4 justify-center pt-10 pb-8 px-10 max-[900px]:flex-col'>
             <div className="card w-[20%] max-[900px]:w-full bg-white shadow-sm hover:shadow-white group/tahapan">
@@ -288,6 +285,7 @@ const Home = () => {
             </div>
           </div>
         </div>
+        <Footer />
     </div>
   )
 }
